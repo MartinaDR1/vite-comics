@@ -1,0 +1,28 @@
+@use './variables' as *;
+
+footer{
+    .top{
+        background-image: url(/public/footer-bg.jpg);
+        max-height: 250px;
+
+        .ms_container{
+            width: 82%;
+            margin: auto;
+
+            h4{
+                color: $primary;
+                text-transform: uppercase;
+            }
+
+            li{
+                color: $light;
+                font-size: small;
+                cursor: pointer;
+            }
+
+            background-image: url(/public/dc-logo-bg.png);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+    }
+}
