@@ -1,17 +1,17 @@
 <script>
-  export default{
-    data(){
-      return {
-
-      }
-    }
+import SiteHeader from "./components/SiteHeader.vue";
+export default {
+  components: {
+    SiteHeader,
   }
+}
 </script>
 
 <template>
-  <h1>hello</h1>
+  <SiteHeader/>
+
+  <main></main>
+  <footer></footer>
 </template>
 
-<style>
-
-</style>
+<style></style>
