@@ -62,6 +62,23 @@ export default {
                 </div>
             </div>
         </div>
+
+        <div class="bottom py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="left">
+                    <button class="btn signUp">sign-up now!</button>
+                </div>
+
+                <div class="right">
+                    <a href="" class="align-self-start">follow us</a>
+                    <img src="../assets/img/footer-facebook.png" alt="">
+                    <img src="../assets/img/footer-periscope.png" alt="">
+                    <img src="../assets/img/footer-pinterest.png" alt="">
+                    <img src="../assets/img/footer-twitter.png" alt="">
+                    <img src="../assets/img/footer-youtube.png" alt="">
+                </div>
+            </div>
+        </div>
     </footer>
 </template>
 
