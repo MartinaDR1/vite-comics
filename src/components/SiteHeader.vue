@@ -5,6 +5,7 @@ export default {
         return {
             name: 'SiteHeader',
             navBar: navBar,
+            activeLink: 1,
         }
     },
     components: {
@@ -23,9 +24,9 @@ export default {
                     </div>
 
                     <div class="nav d-flex align-items-center ">
-                        <ul>
-                            <li>
-                                <a href="" v-for="item in navBar">{{item.text }}</a>
+                        <ul class="d-flex">
+                            <li :class="link === activeLink ? 'active' : ''" v-for="(item, link) in navBar"> 
+                                <a :href="item.link" >{{ item.text }}</a>
                             </li>
                         </ul>
                     </div>
@@ -35,4 +36,18 @@ export default {
     </header>
 </template>
 
-<style></style>
+<style lang="scss" scoped>
+@use "../assets/partials/variables" as *;
+
+    .active{
+        padding-bottom: 1rem;
+        border-bottom: 4px solid $accent;
+    }
+
+    li:hover{
+        border-bottom: 4px solid $accent;
+        cursor: pointer;
+    }
+
+  
+</style>
