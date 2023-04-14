@@ -24,11 +24,26 @@
             :price="ComicsItem.price" 
             :type="ComicsItem.type"/>
         </div>
+
+
+        <button class="btn">Load more</button>
     </div>
    
 </template>
 
 
 <style lang="scss" scoped>
+    @use '../assets/partials/variables' as *;
 
+    .container{
+        text-align: center;
+    }
+    button{
+        background-color: $accent;
+        color: $primary;
+        text-transform: uppercase;
+        padding: 0.7rem 2rem;
+        align-self: center;
+        border: none;
+    }
 </style>
