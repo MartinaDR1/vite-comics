@@ -17,6 +17,9 @@
 
 <template>
     <div class="container">
+    
+        <button class="current">Current Series</button>
+       
         <div class="row">
             <ComicsItem v-for="ComicsItem in comics" 
             :thumb="ComicsItem.thumb" 
@@ -37,7 +40,15 @@
 
     .container{
         text-align: center;
+        position: relative;
+
     }
+    .current{
+        position: absolute;
+        top: -4rem;
+        left: 1rem;
+    }
+
     button{
         background-color: $accent;
         color: $primary;
