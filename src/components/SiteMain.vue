@@ -1,24 +1,27 @@
 <script>
 import banner from "../data/banner";
+import ComicsList from "../components/ComicsList.vue";
 export default {
     data() {
         return {
             name: 'SiteMain',
             banner: banner,
+            ComicsList:ComicsList
         }
     },
     components: {
         banner,
+        ComicsList
     },
 }
 </script>
 
 <template>
     <main>
-        <div class="jumbo">fffgd</div>
+        <div class="jumbo"></div>
 
         <div class="container py-5">
-            <span>Content goes here</span> 
+            <ComicsList/>
         </div>
 
         <div class="banner py-5">
