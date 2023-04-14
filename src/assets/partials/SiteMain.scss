@@ -3,6 +3,13 @@
 main{
     background-color: $dark;
     
+    .jumbo{
+        background-image: url(/public/jumbotron.jpg);
+        height: 20rem;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
     span{
         color:$primary;

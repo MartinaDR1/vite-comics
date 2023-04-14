@@ -15,6 +15,8 @@ export default {
 
 <template>
     <main>
+        <div class="jumbo">fffgd</div>
+
         <div class="container py-5">
             <span>Content goes here</span> 
         </div>
